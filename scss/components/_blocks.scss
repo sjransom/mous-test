@@ -1,0 +1,47 @@
+.blocks {
+  display: flex;
+  margin-bottom: 10rem;
+}
+.blocks__left, .blocks__right {
+  width: 50%;
+}
+.blocks__left {
+  margin-right: 1rem;
+}
+.blocks__left .blocks__box {
+  height: 75rem;
+}
+.blocks__right {
+  margin-left: 1rem;
+}
+.blocks__right .blocks__box {
+  height: 36.5rem;
+}
+.blocks__box {
+  background-color: #C8C8C8;
+  width: 100%;
+}
+.blocks__box--top {
+  margin-bottom: 2rem;
+}
+
+
+@media only screen and (max-width: $desktop-breakpoint) {
+  .blocks {
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+  .blocks__left, .blocks__right {
+    width: auto;
+  }
+  .blocks__left {
+    margin-bottom: 2rem;
+    margin-right: 0;
+  }
+  .blocks__left .blocks__box {
+    height: 37.5rem;
+  }
+  .blocks__right {
+    margin-left: 0;
+  }
+}

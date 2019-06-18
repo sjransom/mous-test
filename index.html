@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="css/vendor/normalize.min.css">
 
-    <link rel="stylesheet" type="text/css" href="css/mous.css">
+    <link rel="stylesheet" href="css/vendor/glide.core.min.css">
+    <link rel="stylesheet" href="css/vendor/glide.theme.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/mous.min.css">
 
     <title>MOUS</title>
   </head>
@@ -31,7 +32,7 @@
 
       <main class="main">
         
-        <section class="carousel">
+        <!-- <section class="carousel">
           <div>
             <div class="carousel__text">
               <h1 class="carousel__heading">Explore Limitless 2.0</h1>
@@ -56,7 +57,23 @@
             </div>
             <div class="carousel__slide carousel__slide--third"></div>
           </div>
-        </section>
+        </section> -->
+
+        <div id="carousel" class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                test
+              </li>
+              <li class="glide__slide">
+                test 2
+              </li>
+              <li class="glide__slide">
+                test 3
+              </li>
+            </ul>
+          </div>
+        </div>
 
         <section class="blocks">
           <div class="blocks__left">
@@ -138,8 +155,7 @@
 
   </body>
 
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script type="text/javascript" src="js/vendor/glide.min.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
 
 </html>

@@ -1,0 +1,44 @@
+.carousel {
+  position: relative;
+}
+.carousel__slide {
+  align-items: center;
+  background-size: cover;
+  display: flex;
+  filter: brightness(60%);
+  flex-direction: column;
+  justify-content: center;
+  height: 700px;
+  width: 100%;
+}
+.carousel__text {
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 1;
+}
+.carousel__heading {
+  color: #fff;
+  font-size: 4.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.carousel__subheading {
+  color: #fff;
+  font-size: 3.6rem;
+  font-weight: normal;
+  margin-top: 1rem;
+}
+.carousel__cta {
+  background-color: #000;
+  border: none;
+  border-radius: 3rem;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2.2rem;
+  padding: 2rem 3rem;
+  text-decoration: none;
+}
