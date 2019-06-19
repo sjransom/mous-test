@@ -1,6 +1,6 @@
 .footer {
   background-color: #000;
-  padding: 3rem 0;
+  padding: $l-size 0;
 }
 .footer__content {
   display: flex;
@@ -10,12 +10,14 @@
   display: flex;
   margin-right: 2rem;
 }
-.footer__text--support {
-  padding-left: 8rem;
+.footer__text {
+  &.footer__text--support {
+    padding-left: 8rem;
+  }
 }
 .footer__title {
   color: #fff;
-  font-size: 1.6rem;
+  font-size: $m-size;
   font-weight: bold;
 }
 .footer__list {
@@ -29,21 +31,21 @@
 .footer__link {
   color: #fff;
   text-decoration: none;
-}
-.footer__link:hover {
-  text-decoration: underline;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 .footer__box {
   display: flex;
 }
 .footer__input {
   height: 6rem;
-  padding-left: 1rem;
+  padding-left: $s-size;
   width: 30rem;
 }
 .footer__signup {
   align-items: center;
-  background-color: #373737;
+  background-color: $dark-grey;
   border: none;
   color: #fff;
   display: flex;
@@ -51,7 +53,7 @@
   font-weight: bold;
   justify-content: center;
   height: 6rem;
-  padding: 0 3rem;
+  padding: 0 $l-size;
   text-decoration: none;
 }
 
@@ -63,8 +65,10 @@
   .footer__left {
     margin-right: 0;
   }
-  .footer__text--support {
-    padding-left: 3rem;
+  .footer__text {
+    &.footer__text--support {
+      padding-left: $l-size;
+    }
   }
   .footer__input {
     width: 20rem;
