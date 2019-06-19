@@ -1,5 +1,10 @@
 # MOUS Test
 
+## To run:
+    npm install gulp-cli -g
+    npm install
+    gulp watch
+
 ## Brief:
 
 "You’ve been given a .png of a landing page by the design team. They need you to hardcode it into HTML, CSS and JS.
